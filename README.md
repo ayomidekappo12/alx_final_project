@@ -1,1 +1,1 @@
-## Sky~Couture E-Commerce Webstack (MERN STACK)
+## Sky~Couture E-Commerce Website (MERN STACK)
