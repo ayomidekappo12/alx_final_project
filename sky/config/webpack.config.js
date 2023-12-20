@@ -21,7 +21,7 @@ module.exports = {
             loader: "image-webpack-loader",
             options: {
               bypassOnDebug: true, // webpack@1.x
-              disable: true, // webpack@2.x and newer
+              disable: false, // webpack@2.x and newer
             },
           },
         ],
@@ -32,9 +32,17 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-react"],
+            presets: ["@babel/preset-env", "@babel/preset-react"],
           },
         },
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: ["file-loader"],
+      },
+      {
+        test: /\.(mp4|webm)$/,
+        use: ["file-loader"],
       },
     ],
   },
@@ -49,13 +57,13 @@ module.exports = {
     compress: true,
     open: true,
     hot: true,
-    port: 8564,
+    port: 8565,
   },
   devtool: "inline-source-map",
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      inject: false,
+      inject: true,
       template: "./dist/index.html",
     }),
   ],
