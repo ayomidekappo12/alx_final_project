@@ -15,6 +15,8 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: black;
+  font-weight: bold;
 `;
 
 const Left = styled.div`
@@ -61,7 +63,7 @@ const Right = styled.div`
 `;
 
 const MenuItem = styled.div`
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   margin-left: 25px;
 `;
