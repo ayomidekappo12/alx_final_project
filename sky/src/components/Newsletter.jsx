@@ -18,7 +18,7 @@ const Title = styled.h1`
 
 const Desc = styled.div`
   font-size: 24px;
-  font-weight: 300;
+  font-weight: bold;
   margin-bottom: 20px;
   ${mobile({ textAlign: "center" })}
 `;
