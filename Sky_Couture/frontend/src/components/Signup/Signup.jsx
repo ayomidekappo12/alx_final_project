@@ -4,24 +4,25 @@ import styles from "../../styles/styles";
 import { Link } from "react-router-dom";
 import { RxAvatar } from "react-icons/rx";
 import axios from "axios";
-import {server} from "../../server";
+import { server } from "../../server";
+import { toast } from "react-toastify";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
-  const [visible, setVisible] = useState("");
+  const [visible, setVisible] = useState(false);
   const [avatar, setAvatar] = useState(null);
-
+  //const navigate = useNavigate();
 
   const handleFileInputChange = (e) => {
     const file = e.target.files[0];
     setAvatar(file);
   };
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const config = {headers:{"Content-Type":"multipart/form-data"}};
+    const config = { headers: { "Content-Type": "multipart/form-data" } };
     const newForm = new FormData();
 
     newForm.append("file", avatar);
@@ -29,11 +30,18 @@ const Signup = () => {
     newForm.append("email", email);
     newForm.append("password", password);
 
-    axios.post(`${server}/user/create-user`, newForm, config).then((res)=>{
-      console.log(res)
-    }).catch((err)=>{
-      console.log(err);
-    })
+    axios
+      .post(`${server}/user/create-user`, newForm, config)
+      .then((res) => {
+        toast.success(res.data.message);
+        setName("");
+        setEmail("");
+        setPassword("");
+        setAvatar();
+      })
+      .catch((error) => {
+        toast.error(error.response.data.message);
+      });
   };
 
   return (
@@ -135,11 +143,20 @@ const Signup = () => {
                     <RxAvatar className="h-8 w-8" />
                   )}
                 </span>
-                <label htmlFor="file-input" className="ml-5 flex items-center justify-center px-4 py-2 border 
-                border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
-                    <span>Upload a file</span>
-                    <input type="file" name="avatar" id="file-input" accept=".jpg, .jpeg, .png" 
-                    onChange={handleFileInputChange} className="sr-only" />
+                <label
+                  htmlFor="file-input"
+                  className="ml-5 flex items-center justify-center px-4 py-2 border 
+                border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+                >
+                  <span>Upload a file</span>
+                  <input
+                    type="file"
+                    name="avatar"
+                    id="file-input"
+                    accept=".jpg, .jpeg, .png"
+                    onChange={handleFileInputChange}
+                    className="sr-only"
+                  />
                 </label>
               </div>
             </div>

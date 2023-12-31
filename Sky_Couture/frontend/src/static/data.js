@@ -319,7 +319,7 @@ export const navItems = [
       discount_price: 1099,
       rating: 5,
       total_sell: 80,
-      stock: 10,
+      stock: 10,  // eslint-disable-next-line
       category:"Mobile & Tablets"
     },
     {
@@ -350,7 +350,7 @@ export const navItems = [
       discount_price: 1049,
       rating: 4,
       total_sell: 75,
-      stock: 10,
+      stock: 10,  // eslint-disable-next-line
       category:"Computers & Laptop"
     },
     {
@@ -412,7 +412,7 @@ export const navItems = [
       discount_price: 89,
       rating: 5,
       total_sell: 49,
-      stock: 10,
+      stock: 10,// eslint-disable-next-line
       category:"Shoes"
     },
     {
