@@ -81,22 +81,21 @@ router.post(
 
       if (!newUser) {
         return next(new ErrorHandler("Invalid token", 400));
-      } else {
-        const { name, email, password, avatar } = newUser;
-        let user = await User.findOne({ email });
-
-        if (user) {
-          return next(new ErrorHandler("User already exists", 400));
-        }
-
-        user = await User.create({
-          name,
-          email,
-          password,
-          avatar,
-        });
-        sendToken(user, 201, res);
       }
+      const { name, email, password, avatar } = newUser;
+      let user = await User.findOne({ email });
+
+      if (user) {
+        return next(new ErrorHandler("User already exists", 400));
+      }
+
+      user = await User.create({
+        name,
+        email,
+        password,
+        avatar,
+      });
+      sendToken(user, 201, res);
     } catch (error) {
       return next(new ErrorHandler(error.message, 500));
     }
@@ -143,6 +142,27 @@ router.get(
       res.status(200).json({
         success: true,
         user,
+      });
+    } catch (error) {
+      return next(new ErrorHandler(error.message, 500));
+    }
+  })
+);
+
+// log out user
+router.get(
+  "/logout",
+  isAuthenticated,
+  catchAsyncErrors(async (req, res, next) => {
+    try {
+      res.cookie("token", null, {
+        expires: new Date(Date.now()),
+        httpOnly: true,
+      });
+
+      res.status(201).json({
+        success: true,
+        message: "Logged out Successfully!",
       });
     } catch (error) {
       return next(new ErrorHandler(error.message, 500));
