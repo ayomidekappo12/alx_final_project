@@ -76,6 +76,12 @@ const AdminDashboardOrders = () => {
 
           <div className="w-full min-h-[45vh] pt-5 rounded flex justify-center">
             <div className="w-[97%] flex justify-center">
+              <div className="w-full bg-[white]"> 
+              <div className="w-full h-[50px]  flex items-center justify-center text-[#000] mb-5">
+            <h3 className="text-[22px] font-Poppins ">
+              <b>Admin ( All Orders ) Overview</b>
+            </h3>
+          </div>             
               <DataGrid
                 rows={row}
                 columns={columns}
@@ -83,6 +89,7 @@ const AdminDashboardOrders = () => {
                 disableSelectionOnClick
                 autoHeight
               />
+            </div>
             </div>
           </div>
         </div>

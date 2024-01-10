@@ -108,6 +108,9 @@ const AllWithdraw = () => {
   return (
     <div className="w-full flex items-center pt-5 justify-center">
       <div className="w-[95%] bg-white">
+      <div className="w-full h-[50px] bg-[white] flex items-center justify-center text-[#000] mb-5">
+          <h3 className="text-[22px] font-Poppins "><b>Admin ( Withdrawal ) Overview</b></h3>
+          </div>
         <DataGrid
           rows={row}
           columns={columns}

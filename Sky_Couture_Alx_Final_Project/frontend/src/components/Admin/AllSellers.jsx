@@ -23,12 +23,12 @@ const AllSellers = () => {
 
   const handleDelete = async (id) => {
     await axios
-    .delete(`${server}/shop/delete-seller/${id}`, { withCredentials: true })
-    .then((res) => {
-      toast.success(res.data.message);
-    });
+      .delete(`${server}/shop/delete-seller/${id}`, { withCredentials: true })
+      .then((res) => {
+        toast.success(res.data.message);
+      });
 
-  dispatch(getAllSellers());
+    dispatch(getAllSellers());
   };
 
   const columns = [
@@ -63,24 +63,24 @@ const AllSellers = () => {
       flex: 0.8,
     },
     {
-        field: "  ",
-        flex: 1,
-        minWidth: 150,
-        headerName: "Preview Shop",
-        type: "number",
-        sortable: false,
-        renderCell: (params) => {
-          return (
-            <>
+      field: "  ",
+      flex: 1,
+      minWidth: 150,
+      headerName: "Preview Shop",
+      type: "number",
+      sortable: false,
+      renderCell: (params) => {
+        return (
+          <>
             <Link to={`/shop/preview/${params.id}`}>
-            <Button>
+              <Button>
                 <AiOutlineEye size={20} />
               </Button>
             </Link>
-            </>
-          );
-        },
+          </>
+        );
       },
+    },
     {
       field: " ",
       flex: 1,
@@ -102,7 +102,7 @@ const AllSellers = () => {
 
   const row = [];
   sellers &&
-  sellers.forEach((item) => {
+    sellers.forEach((item) => {
       row.push({
         id: item._id,
         name: item?.name,
@@ -115,8 +115,12 @@ const AllSellers = () => {
   return (
     <div className="w-full flex justify-center pt-5">
       <div className="w-[97%]">
-        <h3 className="text-[22px] font-Poppins pb-2">All Users</h3>
         <div className="w-full min-h-[45vh] bg-white rounded">
+          <div className="w-full h-[50px] bg-[white] flex items-center justify-center text-[#000] mb-5">
+            <h3 className="text-[22px] font-Poppins ">
+              <b>Admin ( All Sellers ) Overview</b>
+            </h3>
+          </div>
           <DataGrid
             rows={row}
             columns={columns}
@@ -143,7 +147,7 @@ const AllSellers = () => {
                 </div>
                 <div
                   className={`${styles.button} text-white text-[18px] !h-[42px] ml-4`}
-                  onClick={() =>  setOpen(false) || handleDelete(userId)}
+                  onClick={() => setOpen(false) || handleDelete(userId)}
                 >
                   confirm
                 </div>

@@ -84,7 +84,7 @@ const AdminDashboardMain = () => {
       ) : (
         <div className="w-full p-4">
           <div className="w-full h-[50px] bg-[white] flex items-center justify-center text-[#000] mb-5">
-          <h3 className="text-[22px] font-Poppins "><b>Admin Overview</b></h3>
+          <h3 className="text-[22px] font-Poppins "><b>Admin ( Dashboard ) Overview</b></h3>
           </div>
         
         <div className="w-full block 800px:flex items-center justify-between">
