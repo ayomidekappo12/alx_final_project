@@ -1,53 +1,38 @@
-# Project Title
 
-    # Sky_Couture
-
-## Author and Contributors
-
-- **Author:**
-
-  - Ayomide Kappo (Frontend Developer)
-    - **Field:** Frontend Development
-    - **Impact:** Ayomide contributed to the design and implementation of the user interface, focusing on creating a seamless and intuitive experience for users.
-    - **Contribution:** Ayomide played a key role in developing the React components, styling the application, and integrating Redux for state management.
-  - Odogwu Kelly (Backend Developer)
-    - **Field:** Backend Development
-    - **Impact:** Odogwu contributed to building the backend infrastructure, implementing server logic, and establishing the database connection.
-    - **Contribution:** Odogwu worked on Express server setup, database design, and created controllers and models for user, shop, and product functionalities. He also implemented middleware and utility functions for error handling and asynchronous operations.
-
-...
+# Sky~Couture
 
 ## Overview
 
- [Sky~Couture](https://www.youtube.com/watch?v=xHV7kudKV9c)
-
 **Introduction**
 
-Welcome to Sky_Couture, where style meets technology! Our team members, Ayomide Kappo (Frontend Developer) and Odogwu Kelly (Backend Developer), have collaborated to bring you an exceptional web application that seamlessly integrates fashion and e-commerce.
-
-Ayomide, with expertise in frontend development, has crafted a visually appealing and intuitive user interface. His contributions to React components, styling, and Redux integration ensure a delightful user experience.
-
-Odogwu, our backend maestro, has laid the foundation for Sky_Couture. From Express server setup to MongoDB database management, his work ensures a robust backend, providing the necessary support for the frontend magic.
-
-## Architecture Details
-
-Sky_Couture's architecture is a synergy of frontend and backend brilliance. On the backend, Express.js powers our server, providing a flexible and scalable foundation. MongoDB, with its NoSQL capabilities, serves as the database, offering adaptability and efficiency.
-
-The frontend, built with React, embraces a component-based approach, enhancing manageability and responsiveness. The integration of Redux for state management ensures a cohesive and efficient handling of complex state interactions.
+Welcome to `Sky Couture`, where style meets with technology!. This website is a multi-vendor ecommerce website where users can create account, and sellers can create a shop. The team members on this project are, `Ayomide Kappo` a Frontend Developer who took charge in the configuration of the frontend server with react framework and `Odogwu Kelly` Backend Developer who took charge in the configuration of the backend Api with Express server.
+   * Below is the video link of the website 
+   [sky~Cuture](https://www.youtube.com/watch?v=xHV7kudKV9c)
 
 ## Technologies and Services Used
 
 **Backend Technologies:**
 
-Express.js: Chosen for its simplicity and flexibility, Express.js forms the backbone of Sky_Couture's server, seamlessly integrating various features through its middleware system.
-MongoDB: Our database of choice, MongoDB, brings scalability and flexibility to data storage, aligning perfectly with our project's requirements.
+   * Express.js: Chosen for its simplicity and flexibility, Express.js forms the backbone of Sky_Couture's server, seamlessly integrating various features through its middleware system.
+   * MongoDB: Our database of choice, MongoDB, brings scalability and flexibility to data storage, aligning perfectly with our project's requirements.
 
 **Frontend Technologies:**
 
-React: The heart of our frontend, React component-based architecture streamlines UI development, ensuring a dynamic and responsive user experience.
-Redux: As our state management solution, Redux provides a centralized store, simplifying the complexities of state interactions.
+   * React: The heart of our frontend, React component-based architecture streamlines UI development, ensuring a dynamic and responsive user experience.
+   * Redux: As our state management solution, Redux provides a centralized store, simplifying the complexities of state interactions.
+ 
+**Others**
+   * socketIo: This was used for the configuration of chatting functionalities
+   * cloudinary: This was used to implement cloud storage of all pictures  
 
-## Local Setup
+## Developement Setup
+**Install dependencies**
+   * Clone the Repository.
+   * Run `git clone https://github.com/odogwukelly/alx_final_project.git`
+
+   * Change directory to the respective [frontend/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/frontend), [backend/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/backend) and [socket/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/socket) directorie
+
+
 
 ### Prerequisites
 
