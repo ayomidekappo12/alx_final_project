@@ -103,13 +103,10 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div
-        // className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
-        //  text-center pt-0 text-gray-400 text-sm pb-4"
-      >
+      <div className="">
+      
         
-        {/* <span>Terms · Privacy Policy</span> */}
-        <span className="flex items-center justify-center">© 2024 Ki~Tech. All rights reserved.</span>
+        <span className="flex items-center justify-center pb-10">© 2024 Ki~Tech. All rights reserved.</span>
       </div>
     </div>
   );

@@ -198,7 +198,7 @@ router.get(
   })
 );
 
-// update shop profile picture
+// update shop profile picture 
 router.put(
   "/update-shop-avatar",
   isSeller,

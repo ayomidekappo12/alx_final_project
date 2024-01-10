@@ -191,28 +191,35 @@ export const navItems = [
   export const categoriesData = [
     {
       id: 1,
-      title: "Agbada/Native Wears",
+      title: "Agbada",
       subTitle: "",
       image_Url:
         "https://i.pinimg.com/originals/e6/d6/08/e6d608578296c1fcc15dc080482194bb.jpg"
     },
-    
     {
       id: 2,
+      title: "Native Wears",
+      subTitle: "",
+      image_Url:
+        "https://i.pinimg.com/originals/50/e6/dc/50e6dcb4f970c86bb32430b96fe93b2b.jpg"
+    },
+    
+    {
+      id: 3,
       title: "Suit",
       subTitle: "",
       image_Url:
         "https://i.pinimg.com/originals/87/64/b0/8764b08aea0a0acceea0c702f31ff064.jpg",
     },
     {
-      id: 3,
+      id: 4,
       title: "Pant Trouser",
       subTitle: "",
       image_Url:
         "https://i.etsystatic.com/23713226/r/il/4a9452/3790859983/il_1588xN.3790859983_q57q.jpg",
     },
     {
-      id: 4,
+      id: 5,
       title: "T-shirt",
       subTitle: "",
       image_Url:
