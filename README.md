@@ -10,8 +10,6 @@
     - **Field:** Frontend Development
     - **Impact:** Ayomide contributed to the design and implementation of the user interface, focusing on creating a seamless and intuitive experience for users.
     - **Contribution:** Ayomide played a key role in developing the React components, styling the application, and integrating Redux for state management.
-
-- **Contributor:**
   - Odogwu Kelly (Backend Developer)
     - **Field:** Backend Development
     - **Impact:** Odogwu contributed to building the backend infrastructure, implementing server logic, and establishing the database connection.
@@ -20,6 +18,8 @@
 ...
 
 ## Overview
+
+ [Sky~Couture](https://www.youtube.com/watch?v=xHV7kudKV9c)
 
 **Introduction**
 
