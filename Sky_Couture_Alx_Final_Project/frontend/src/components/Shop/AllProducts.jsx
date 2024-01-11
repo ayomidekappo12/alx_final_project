@@ -109,6 +109,9 @@ const AllProducts = () => {
         <Loader />
       ) : (
         <div className="w-full mx-8 pt-1 mt-10 bg-white">
+          <div className="w-full h-[50px] bg-[white] flex items-center justify-center text-[#000] mb-5">
+          <h3 className="text-[22px] font-Poppins "><b>Shop ( All Products ) Overview</b></h3>
+          </div>
           <DataGrid
             rows={row}
             columns={columns}

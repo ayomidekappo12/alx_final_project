@@ -13,7 +13,7 @@ const DashboardHeader = () => {
       <div>
         <Link to="/dashboard">
           <h1 className="text-[25px]">
-            <b>Sky~Couture Shop</b>
+            <b>Sky~Couture</b>
           </h1>
         </Link>
       </div>
