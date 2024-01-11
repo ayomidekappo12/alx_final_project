@@ -6,6 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
 
+// require dotenv file
 require("dotenv").config({
   path: "./.env",
 });
