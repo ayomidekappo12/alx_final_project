@@ -26,8 +26,8 @@ Welcome to `Sky Couture`, where style meets with technology!. This website is a 
    * cloudinary: This was used to implement cloud storage of all pictures  
 
 ## Developement Setup
-**Install dependencies**
-### Clone the Repository.
+### Install dependencies
+Clone the Repository.
    * Run `git clone https://github.com/odogwukelly/alx_final_project.git`
 
 Change directory to the respective, install dependencies and start the servers
@@ -35,8 +35,11 @@ Change directory to the respective, install dependencies and start the servers
    * `Cd` to [frontend/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/frontend)
    * Run `yarn` to install all the dependencies on the frontend server
    * Then Run `npm start` to start the server
+ 
+ **Configuration:**
+   Created a `.env` file in the `backend and socketIo` folder and set the necessary environment variables `(port connection, database connection, secret keys, emailing connection, stripe keys connection and cloudinary keys connection)`.
 
-   * `Cd` tio [backend/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/backend) 
+   * `Cd` to [backend/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/backend) 
    * Run `npm install` to install all the dependencies on the backend server
    * Then Run `npm run dev` to start the server
 
