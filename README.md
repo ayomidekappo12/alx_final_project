@@ -40,7 +40,7 @@ Change directory to the respective, install dependencies and start the servers
    * Then Run `npm start` to start the server
  
  **Configuration:**
-   Created a `.env` file in the `backend and socketIo` folder and set the necessary environment variables `(port connection, database connection, secret keys, emailing connection, stripe keys connection and cloudinary keys connection)`.
+   Create a `.env` file in the `backend and socket` directories and set the necessary environment variables (`port connection, database connection, secret keys, emailing connection, stripe keys connection and cloudinary keys connection`).
 
    * `Cd` to [backend/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/backend) 
    * Run `npm install` to install all the dependencies on the backend server
