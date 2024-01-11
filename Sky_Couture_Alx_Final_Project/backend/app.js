@@ -22,7 +22,7 @@ app.use("/test", (req, res) => {
 
 app.use(bodyParser.urlencoded({ extended: true, parameterLimit: 50000, limit: "50mb" }));
 
-
+// compress request and response payload
 app.use(compression({
   level: 6,
   threshold: 100 * 1000,
