@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+//coupon code schema 
 const coupounCodeSchema = new mongoose.Schema({
     name:{
         type: String,

@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+// withdrawal schema
 const withdrawSchema = new mongoose.Schema({
   seller: {
     type: Object,
