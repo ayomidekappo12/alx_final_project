@@ -1,6 +1,7 @@
 {
     "version": 1,
     "name":"Sky~Couture",
+    "description": "A Multi Vendor E-commerce website with MEARN STACK",
     "builds":[
         {"src":"server.js","use":"@vercel/node"}
     ],
