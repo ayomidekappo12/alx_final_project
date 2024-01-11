@@ -1,7 +1,9 @@
 
-# Sky~Couture
+# Sky~Couture (MEARN STACK) E-commerce website
 
 ## Overview
+
+![sky~couture landing page image](https://github.com/odogwukelly/alx_final_project/blob/main/image/sky_couture.png)
 
 **Introduction**
 
