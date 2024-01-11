@@ -32,16 +32,16 @@ Welcome to `Sky Couture`, where style meets with technology!. This website is a 
 
 Change directory to the respective, install dependencies and start the servers
    * Run `cd Sky_Couture_Alx_Final_Project/frontend`[frontend/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/frontend), 
-    - Run `yarn` to install all the dependencies on the frontend server
-    - Then Run `npm start` to start the server
+   * Run `yarn` to install all the dependencies on the frontend server
+   * Then Run `npm start` to start the server
 
    * [backend/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/backend) 
-    - Run `npm install` to install all the dependencies on the backend server
-    - Then Run `npm run dev` to start the server
+   * Run `npm install` to install all the dependencies on the backend server
+   * Then Run `npm run dev` to start the server
 
    * [socket/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/socket) directories
-    - Run `npm install` to install all the dependencies on the socketIo sever 
-    - Then Run `npm start` to start the server
+   * Run `npm install` to install all the dependencies on the socketIo sever 
+   * Then Run `npm start` to start the server
 
 
 
