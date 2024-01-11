@@ -6,8 +6,8 @@
 **Introduction**
 
 Welcome to `Sky Couture`, where style meets with technology!. This website is a multi-vendor ecommerce website where users can create account, and sellers can create a shop. The team members on this project are, `Ayomide Kappo` a Frontend Developer who took charge in the configuration of the frontend server with react framework and `Odogwu Kelly` Backend Developer who took charge in the configuration of the backend Api with Express server.
-   * Below is the video link of the website 
-   [sky~Cuture](https://www.youtube.com/watch?v=xHV7kudKV9c)
+   * Here is the video link of the website 
+   [sky~Cuture video](https://www.youtube.com/watch?v=xHV7kudKV9c)
 
 ## Technologies and Services Used
 
@@ -27,10 +27,22 @@ Welcome to `Sky Couture`, where style meets with technology!. This website is a 
 
 ## Developement Setup
 **Install dependencies**
-   * Clone the Repository.
+### Clone the Repository.
    * Run `git clone https://github.com/odogwukelly/alx_final_project.git`
 
-   * Change directory to the respective [frontend/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/frontend), [backend/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/backend) and [socket/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/socket) directorie
+Change directory to the respective, install dependencies and start the servers
+   * Run `cd Sky_Couture_Alx_Final_Project/frontend`[frontend/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/frontend), 
+    - Run `yarn` to install all the dependencies on the frontend server
+    - Then Run `npm start` to start the server
+
+   * [backend/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/backend) 
+    - Run `npm install` to install all the dependencies on the backend server
+    - Then Run `npm run dev` to start the server
+
+   * [socket/](https://github.com/odogwukelly/alx_final_project/tree/main/Sky_Couture_Alx_Final_Project/socket) directories
+    - Run `npm install` to install all the dependencies on the socketIo sever 
+    - Then Run `npm start` to start the server
+
 
 
 
